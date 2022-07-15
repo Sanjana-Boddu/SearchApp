@@ -1,0 +1,32 @@
+{
+  "name": "search-app",
+  "version": "1.0.0",
+  "description": "Search Application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix frontEnd",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Sanjana",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "device": "^0.3.11",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-device": "^0.4.2",
+    "i18n": "^0.10.0",
+    "mongoose": "^5.9.20",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "window-size": "^1.1.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4"
+  }
+}
